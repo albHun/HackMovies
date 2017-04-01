@@ -4,11 +4,16 @@ from Analytics import findBestAndWorst
 from Analytics import analyze
 
 
+
 # Opening the json file and parsing it
 with open("data.json") as data_file:
 	data = json.load(data_file)
 
 # Getting the information out from file
+"""
+This waits to be specified with the incoming data.
+"""
+
 X = data["word vectors"]
 ratings = data["movie ratings"]
 
