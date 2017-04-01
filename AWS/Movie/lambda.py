@@ -10,7 +10,7 @@ http://amzn.to/1LGWsLG
 from __future__ import print_function
 
 
-# --------------- Helpers that build all of the responses ----------------------
+# --------------- Helpers that build all of the responses ----------------
 
 def build_speechlet_response(title, output, reprompt_text, should_end_session):
     return {
@@ -41,7 +41,7 @@ def build_response(session_attributes, speechlet_response):
     }
 
 
-# --------------- Functions that control the skill's behavior ------------------
+# --------------- Functions that control the skill's behavior ------------
 
 def get_welcome_response():
     """ If we wanted to initialize the session to have some attributes we could
@@ -55,8 +55,8 @@ def get_welcome_response():
                     "I am feeling sad"
     # If the user either does not reply to the welcome message or says something
     # that is not understood, they will be prompted again with this text.
-    #reprompt_text = "Please tell me your favorite color by saying, " \
-                    #"my favorite color is red."
+    reprompt_text = "Please tell me your favorite color by saying, " \
+    "my favorite color is red."
     should_end_session = False
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
@@ -103,7 +103,7 @@ def tell_movie(intent, session):
 
     if session.get('attributes', {}) and "actor" in session.get('attributes', {}):
         actor = session['attributes']['actor']
-        #speech_output = "Your favorite color is " + favorite_color + \
+        # speech_output = "Your favorite color is " + favorite_color + \
         #                ". Goodbye."
         should_end_session = True
     else:
@@ -123,8 +123,8 @@ def tell_movie(intent, session):
 def on_session_started(session_started_request, session):
     """ Called when the session starts """
 
-    print("on_session_started requestId=" + session_started_request['requestId']
-          + ", sessionId=" + session['sessionId'])
+    print("on_session_started requestId=" + session_started_request['requestId'] +
+          ", sessionId=" + session['sessionId'])
 
 
 def on_launch(launch_request, session):
@@ -176,7 +176,7 @@ def lambda_handler(event, context):
     """ Route the incoming request based on type (LaunchRequest, IntentRequest,
     etc.) The JSON body of the request is provided in the event parameter.
     """
-    #print("event.session.application.applicationId=" +
+    # print("event.session.application.applicationId=" +
     #      event['session']['application']['applicationId'])
 
     """
@@ -185,7 +185,8 @@ def lambda_handler(event, context):
     function.
     """
     if (event['session']['application']['applicationId'] != "amzn1.ask.skill.9ef82d07-d8c4-46dc-826d-bf42de2fdb88"):
-        err_msg = "Invalid Application ID: " + event['session']['application']['applicationId']
+        err_msg = "Invalid Application ID: " + \
+            event['session']['application']['applicationId']
         raise ValueError(err_msg)
 
     if event['session']['new']:
