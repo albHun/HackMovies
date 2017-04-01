@@ -1,0 +1,26 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "word",
+          "type": "LIST_OF_WORDD"
+        },
+        {
+          "name": "number",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "knowhow"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
