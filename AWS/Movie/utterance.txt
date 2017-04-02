@@ -6,3 +6,16 @@ Actors film acted by {actor}
 Actors film starring {actor}
 Actors films acted by {actor}
 Actors films starring {actor}
+Feelings {emotion} films
+Feelings {emotion} movies
+Feelings {emotion} film
+Feelings {emotion} movie
+
+MatchFeelings show me {seq} {emotion} film
+MatchFeelings show me {seq} {emotion} movie
+MatchFeelings I want {seq} {emotion} film
+MatchFeelings I want {seq} {emotion} movie
+MatchFeelings give me {seq} {emotion} film
+MatchFeelings give me {seq} {emotion} movie
+MatchFeelings tell me {seq} {emotion} film
+MatchFeelings tell me {seq} {emotion} movie

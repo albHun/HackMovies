@@ -2,6 +2,7 @@
 
 import numpy as np
 from KMeans import KMeansClustering
+from KMeans import DBSCANClustering
 
 def analyze(X, n_clusters = 8):
 	"""
@@ -14,18 +15,9 @@ def analyze(X, n_clusters = 8):
 		movieIndicesClustered[i] = []
 	for j in range(len(X)):
 		movieIndicesClustered[X_labels[j]].append(j)
+
 	return movieIndicesClustered
 
-def findBestAndWorst(X, ratings):
-	"""
-	Returning the indices of best-rated and worst-rated movies.
-	"""
-	ratingsSorted = sorted(ratings)
-	int highRating = ratingsSorted[int(len(ratings) * 0.2)]
-	int lowRating = ratingsSorted[int(len(ratings) * 0.8)]
-	bestIndices = [i for i in range(0, len(ratings)) if ratings[i] > highRating]
-	worstIndices = [i for i in range(0, len(ratings)) if ratings[i] < lowRating]
-	return bestIndices, worstIndices
 
 
 
