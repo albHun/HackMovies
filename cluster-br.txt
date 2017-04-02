@@ -1,0 +1,258 @@
+==Cluster 1==
+The Matrix<br>
+Good Will Hunting<br>
+All About Eve<br>
+Chinatown<br>
+Andrei Rublev<br>
+==Cluster 2==
+Amlie<br>
+Twelve Monkeys<br>
+==Cluster 3==
+Casablanca<br>
+The Intouchables<br>
+Dr Strangelove or- How I Learned to Stop Worrying and Love the Bomb<br>
+Bicycle Thieves<br>
+Ran<br>
+==Cluster 4==
+The Good the Bad and the Ugly<br>
+City of God<br>
+Once Upon a Time in the West<br>
+Aliens<br>
+Inglourious Basterds<br>
+Downfall<br>
+The General<br>
+Into the Wild<br>
+Touch of Evil<br>
+La Haine<br>
+==Cluster 5==
+The Shawshank Redemption<br>
+The Godfather<br>
+The Godfather- Part II<br>
+The Dark Knight<br>
+12 Angry Men<br>
+Schindlers List<br>
+Pulp Fiction<br>
+The Lord of the Rings- The Return of the King<br>
+Fight Club<br>
+The Lord of the Rings- The Fellowship of the Ring<br>
+Star Wars- Episode V - The Empire Strikes Back<br>
+Forrest Gump<br>
+Inception<br>
+The Lord of the Rings- The Two Towers<br>
+One Flew Over the Cuckoos Nest<br>
+Goodfellas<br>
+Seven Samurai<br>
+Star Wars- Episode IV - A New Hope<br>
+Se7en<br>
+The Silence of the Lambs<br>
+Its a Wonderful Life<br>
+Life Is Beautiful<br>
+The Usual Suspects<br>
+Lon- The Professional<br>
+Spirited Away<br>
+Saving Private Ryan<br>
+American History X<br>
+Interstellar<br>
+City Lights<br>
+Psycho<br>
+The Green Mile<br>
+Modern Times<br>
+Raiders of the Lost Ark<br>
+Rear Window<br>
+The Pianist<br>
+The Departed<br>
+Terminator 2- Judgment Day<br>
+Back to the Future<br>
+Whiplash<br>
+Gladiator<br>
+Memento<br>
+The Prestige<br>
+Apocalypse Now<br>
+The Lion King<br>
+Alien<br>
+Sunset Boulevard<br>
+The Great Dictator<br>
+Cinema Paradiso<br>
+The Lives of Others<br>
+Grave of the Fireflies<br>
+Paths of Glory<br>
+Django Unchained<br>
+The Shining<br>
+Logan<br>
+WALLE<br>
+American Beauty<br>
+The Dark Knight Rises<br>
+Princess Mononoke<br>
+Oldboy<br>
+Once Upon a Time in America<br>
+Witness for the Prosecution<br>
+Citizen Kane<br>
+Das Boot<br>
+North by Northwest<br>
+Vertigo<br>
+Star Wars- Episode VI - Return of the Jedi<br>
+Reservoir Dogs<br>
+Braveheart<br>
+La La Land<br>
+M<br>
+Requiem for a Dream<br>
+Like Stars on Earth<br>
+Taxi Driver<br>
+Lawrence of Arabia<br>
+Double Indemnity<br>
+Eternal Sunshine of the Spotless Mind<br>
+To Kill a Mockingbird<br>
+Toy Story 3<br>
+Dangal<br>
+The Sting<br>
+2001- A Space Odyssey<br>
+Toy Story<br>
+The Kid<br>
+Snatch<br>
+3 Idiots<br>
+Monty Python and the Holy Grail<br>
+LA Confidential<br>
+For a Few Dollars More<br>
+Scarface<br>
+The Hunt<br>
+The Apartment<br>
+Rashomon<br>
+A Separation<br>
+Metropolis<br>
+Indiana Jones and the Last Crusade<br>
+Yojimbo<br>
+Batman Begins<br>
+Up<br>
+Some Like It Hot<br>
+The Treasure of the Sierra Madre<br>
+Unforgiven<br>
+Raging Bull<br>
+Die Hard<br>
+Children of Heaven<br>
+Heat<br>
+The Great Escape<br>
+Ikiru<br>
+Pans Labyrinth<br>
+Inside Out<br>
+My Neighbor Totoro<br>
+The Gold Rush<br>
+On the Waterfront<br>
+Room<br>
+The Secret in Their Eyes<br>
+The Bridge on the River Kwai<br>
+Blade Runner<br>
+Howls Moving Castle<br>
+Mr Smith Goes to Washington<br>
+The Seventh Seal<br>
+Lock Stock and Two Smoking Barrels<br>
+Incendies<br>
+Judgment at Nuremberg<br>
+Casino<br>
+A Beautiful Mind<br>
+Wild Strawberries<br>
+The Elephant Man<br>
+V for Vendetta<br>
+The Wolf of Wall Street<br>
+Warrior<br>
+Hacksaw Ridge<br>
+The Bandit<br>
+Sunrise<br>
+Trainspotting<br>
+Gran Torino<br>
+Dial M for Murder<br>
+A Wednesday<br>
+The Big Lebowski<br>
+Rang De Basanti<br>
+Fargo<br>
+Tokyo Story<br>
+Gone with the Wind<br>
+The Passion of Joan of Arc<br>
+The Sixth Sense<br>
+Finding Nemo<br>
+The Thing<br>
+No Country for Old Men<br>
+Cool Hand Luke<br>
+Rebecca<br>
+How to Train Your Dragon<br>
+Kill Bill- Vol 1<br>
+There Will Be Blood<br>
+Come and See<br>
+Mary and Max<br>
+Gone Girl<br>
+Life of Brian<br>
+It Happened One Night<br>
+Shutter Island<br>
+Platoon<br>
+Hotel Rwanda<br>
+Munna Bhai MBBS<br>
+Network<br>
+The Wages of Fear<br>
+Wild Tales<br>
+Stand by Me<br>
+In the Name of the Father<br>
+Spotlight<br>
+The 400 Blows<br>
+Mad Max- Fury Road<br>
+12 Years a Slave<br>
+The Grand Budapest Hotel<br>
+Butch Cassidy and the Sundance Kid<br>
+Sholay<br>
+Ben-Hur<br>
+Persona<br>
+Hera Pheri<br>
+The Maltese Falcon<br>
+Amores Perros<br>
+Jurassic Park<br>
+The Nights of Cabiria<br>
+Star Wars- The Force Awakens<br>
+The Princess Bride<br>
+Memories of Murder<br>
+Stalker<br>
+Hachi- A Dogs Tale<br>
+Nausica of the Valley of the Wind<br>
+Andaz Apna Apna<br>
+Before Sunrise<br>
+The Grapes of Wrath<br>
+Rocky<br>
+Harry Potter and the Deathly Hallows- Part 2<br>
+Annie Hall<br>
+Gandhi<br>
+Prisoners<br>
+Diabolique<br>
+Donnie Darko<br>
+The Bourne Ultimatum<br>
+Get Out<br>
+Monsters Inc<br>
+Catch Me If You Can<br>
+The Terminator<br>
+8<br>
+The Wizard of Oz<br>
+Groundhog Day<br>
+Barry Lyndon<br>
+Jaws<br>
+Infernal Affairs<br>
+The Best Years of Our Lives<br>
+Drishyam<br>
+Zootopia<br>
+The Battle of Algiers<br>
+Dog Day Afternoon<br>
+Gangs of Wasseypur<br>
+The Help<br>
+What Ever Happened to Baby Jane<br>
+The Message<br>
+Beauty and the Beast<br>
+Strangers on a Train<br>
+==Cluster 6==
+The Third Man<br>
+==Cluster 7==
+A Clockwork Orange<br>
+Full Metal Jacket<br>
+My Father and My Son<br>
+The Deer Hunter<br>
+Rush<br>
+Million Dollar Baby<br>
+The Truman Show<br>
+==Cluster 8==
+Amadeus<br>
+Singin in the Rain<br>
+
