@@ -40,18 +40,22 @@ def invokeToneConversation(payload, maintainToneHistoryInContext=True):
 # synchronous call to conversation with tone included in the context
 # pprint(invokeToneConversation(payload, maintainToneHistoryInContext))
 path = r"F:\MyProjects\MLH_prime\data\reviews_vector\\"
-payload = ""
-count = 0
-with open(path + "tt0468569_The Dark Knight_vector.csv") as ih:
-    for line in ih:
-        if count <= 50:
-            payload += " " + line.split(",")[0]
-            count += 1
-            
-        else:
-            break
-tone = invokeToneConversation(payload)
 
-for emotion in tone['document_tone']['tone_categories']:
-    if emotion['category_id'] == 'emotion_tone':
-        print(emotion['tones'])
+for i in os.listdir(path):
+    if i.endswith("_vector.csv"):
+        print(i)
+        payload = ""
+        count = 0
+        with open(path + i) as ih:
+            for line in ih:
+                if count <= 50:
+                    payload += " " + line.split(",")[0]
+                    count += 1
+                    
+                else:
+                    break
+        tone = invokeToneConversation(payload)
+
+        for emotion in tone['document_tone']['tone_categories']:
+            if emotion['category_id'] == 'emotion_tone':
+                print(emotion['tones'])
