@@ -39,3 +39,7 @@ def invokeToneConversation(payload, maintainToneHistoryInContext=True):
 
 # synchronous call to conversation with tone included in the context
 # pprint(invokeToneConversation(payload, maintainToneHistoryInContext))
+
+with open("data.json") as oh:
+    data = json.load(oh)
+    

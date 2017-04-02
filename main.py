@@ -130,14 +130,29 @@ with open("data.json") as data_file:
     print(X)
 
     # Using functions defined in Analytics.py to briefly analyze the data
-    movieIndicesClustered = analyze(X, 8)
-    for result in movieIndicesClustered:
-        for key in result.keys():
-            print("******************Cluster %s*******************" % str(key+1))
-            for value in result[key]:
-                for k in data:
-                    if int(k["rank"]) == value:
-                        print("'"+k["film_name"]+"'")
+    result = analyze(X, 8)
+    largest = [0, 0]
+
+    for key in result.keys():
+        if len(result[key]) > largest[1]:
+            largest = [key, len(result[key])]
+        print("******************Cluster %s*******************" % str(key+1))
+        for value in result[key]:
+            for k in data:
+                if int(k["rank"]) == value:
+                    print("'"+k["film_name"]+"'")
+
+    clu = result[largest[0]]
+    print(clu, len(clu))
+    cluster = np.array(X[clu])
+    print(cluster)
+    result = analyze(cluster, 4)
+    for key in result.keys():
+        print("******************Cluster %s*******************" % str(key+1))
+        for value in result[key]:
+            for k in data:
+                if int(k["rank"]) == value:
+                    print("'"+k["film_name"]+"'")
 
 
 
