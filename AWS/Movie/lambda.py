@@ -52,8 +52,8 @@ def get_welcome_response():
     session_attributes = {}
     card_title = "Welcome"
     speech_output = "Welcome to the Sentimental Movie recommendation. " \
-                    "Please tell me your mood today by saying, " \
-                    "I am feeling sad"
+                    "Please tell me your preference by saying, " \
+                    "show me a sad movie"
     # If the user either does not reply to the welcome message or says something
     # that is not understood, they will be prompted again with this text.
     reprompt_text = speech_output
@@ -83,7 +83,10 @@ def actor(intent, session):
 
     card_title = intent['slots']['actor']['name']
     session_attributes = {}
-    should_end_session = False
+    should_end_session = True
+    speech_output = "I recommend The Godfather if you want a sad movie"
+    return build_response(session_attributes, build_speechlet_response(
+        card_title, speech_output, reprompt_text, should_end_session))
 
     if 'actor' in intent['slots']:
         # nameofpeofactor = intent['slots']
