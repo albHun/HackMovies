@@ -9,6 +9,7 @@ http://amzn.to/1LGWsLG
 
 from __future__ import print_function
 
+reprompt_text = 'Sorry, please try again.'
 
 # --------------- Helpers that build all of the responses ----------------
 
@@ -55,8 +56,7 @@ def get_welcome_response():
                     "I am feeling sad"
     # If the user either does not reply to the welcome message or says something
     # that is not understood, they will be prompted again with this text.
-    reprompt_text = "Please tell me your favorite color by saying, " \
-    "my favorite color is red."
+    reprompt_text = speech_output
     should_end_session = False
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
@@ -81,15 +81,15 @@ def actor(intent, session):
     user.
     """
 
-    card_title = intent['actors']
+    card_title = intent['slots']['actor']['name']
     session_attributes = {}
     should_end_session = False
 
-    if 'actors' in intent['slots']:
-        nameofpeofactor = intent['slots']
-        session_attributes = create_actor_attributes(actor)
-        speech_output = "So You want to know movie stared by" + \
-                        actor
+    if 'actor' in intent['slots']:
+        # nameofpeofactor = intent['slots']
+        # session_attributes = create_actor_attributes(actor)
+        speech_output = "So You want to know movie starred by " + \
+                        intent['slots']['actor']['value']
     else:
         speech_output = "I'm not sure what your saying. " \
                         "Please try again."
@@ -102,7 +102,7 @@ def tell_movie(intent, session):
     reprompt_text = None
 
     if session.get('attributes', {}) and "actor" in session.get('attributes', {}):
-        actor = session['attributes']['actor']
+        # actor = session['attributes']['actor']
         # speech_output = "Your favorite color is " + favorite_color + \
         #                ". Goodbye."
         should_end_session = True
@@ -140,21 +140,20 @@ def on_launch(launch_request, session):
 
 def on_intent(intent_request, session):
     """ Called when the user specifies an intent for this skill """
-
     print("on_intent requestId=" + intent_request['requestId'] +
           ", sessionId=" + session['sessionId'])
 
     intent = intent_request['intent']
-    intent_name = intent_request['intent']['actors']
+    intent_name = intent_request['intent']['slots']
 
     # Dispatch to your skill's intent handlers
-    if intent_name == "actors":
+    if "actor" in intent_name:
         return actor(intent, session)
-    elif intent_name == "whatmovie":
+    elif "whatmovie" in intent_name:
         return tell_movie(intent, session)
-    elif intent_name == "AMAZON.HelpIntent":
+    elif "AMAZON.HelpIntent" in intent_name:
         return get_welcome_response()
-    elif intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":
+    elif "AMAZON.CancelIntent" in intent_name or "AMAZON.StopIntent" in intent_name:
         return handle_session_end_request()
     else:
         raise ValueError("Invalid intent")

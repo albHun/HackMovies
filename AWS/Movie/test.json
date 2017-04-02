@@ -1,6 +1,6 @@
 {
   "session": {
-    "new": true,
+    "new": false,
     "sessionId": "amzn1.echo-api.session.[unique-value-here]",
     "attributes": {},
     "user": {
@@ -13,9 +13,21 @@
   "version": "1.0",
   "request": {
     "locale": "en-US",
-    "timestamp": "2016-10-27T18:21:44Z",
-    "type": "LaunchRequest",
-    "requestId": "amzn1.echo-api.request.[unique-value-here]"
+    "timestamp": "2017-04-02T00:15:46Z",
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.fbae7859-f7d8-4cd2-ae1a-5a989ca42d0b",
+    "intent": {
+      "slots": {
+        "Date": {
+          "name": "Date"
+        },
+        "actor": {
+          "name": "actor",
+          "value": "martin"
+        }
+      },
+      "name": "Actors"
+    }
   },
   "context": {
     "AudioPlayer": {
