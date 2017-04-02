@@ -88,7 +88,7 @@ def actor(intent, session):
     if 'actor' in intent['slots']:
         # nameofpeofactor = intent['slots']
         # session_attributes = create_actor_attributes(actor)
-        speech_output = "So You want to know movie starred by " + \
+        speech_output = "So You want to know movie acted by " + \
                         intent['slots']['actor']['value']
     else:
         speech_output = "I'm not sure what your saying. " \
