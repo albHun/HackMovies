@@ -132,6 +132,7 @@ with open("data.json") as data_file:
     # Using functions defined in Analytics.py to briefly analyze the data
     result = analyze(X, 8)
     largest = [0, 0]
+    print(result)
 
     for key in result.keys():
         if len(result[key]) > largest[1]:
