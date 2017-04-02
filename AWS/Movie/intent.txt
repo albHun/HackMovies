@@ -4,17 +4,35 @@
       "intent": "AMAZON.HelpIntent"
     },
     {
+      "intent": "Actors",
       "slots": [
         {
           "name": "actor",
           "type": "AMAZON.Actor"
+        }
+      ]
+    },
+    {
+      "intent": "Feelings",
+      "slots": [
+        {
+          "name": "emotion",
+          "type": "SENTIMENTS_TYPE"
+        }
+      ]
+    },
+    {
+      "intent": "MatchFeelings",
+      "slots": [
+        {
+          "name": "emotion",
+          "type": "SENTIMENTS_TYPE"
         },
         {
-          "name": "Date",
-          "type": "AMAZON.DATE"
+          "name": "seq",
+          "type": "SEQUENCE_TYPE"
         }
-      ],
-      "intent": "Actors"
+      ]
     },
     {
       "intent": "AMAZON.StopIntent"
